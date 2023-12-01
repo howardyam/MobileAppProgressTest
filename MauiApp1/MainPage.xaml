@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView BackgroundColor="#4e4e4e" >
+        
+        <StackLayout >
+
+
+            <Grid WidthRequest="110" 
+                  HeightRequest="110" 
+                  HorizontalOptions="Center" 
+                  VerticalOptions="Center">
+                <Frame BackgroundColor="Yellow" 
+                       Padding="5" 
+                       CornerRadius="55" 
+                       WidthRequest="110" 
+                       HeightRequest="110">
+                    <Frame BackgroundColor="Transparent" 
+                           CornerRadius="50" 
+                           Padding="0">
+                        <Image Source="vangogh.png" 
+                               Aspect="AspectFill" 
+                               WidthRequest="100" 
+                               HeightRequest="100"/>
+                    </Frame>
+                </Frame>
+            </Grid>
+
+
+
+
+            <Label Text="Vincent van Gogh"
+                   FontSize="30"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   FontFamily="Times New Roman, Italic"
+                   Margin="0,20,0,0"/>
+
+            <Label Text="Dutch, 1853 -- 1890"  
+                   FontSize="12" 
+                   TextColor="White" 
+                   HorizontalOptions="Center"
+                   Margin="0,10"/>
+            <Label Text=" Was a Dutch POst-Impressionist painter who is &#10;among the most famous and influential... " 
+                   FontSize="12" Padding="10,0"
+                   TextColor="White" HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"/>
+
+
+
+            <Frame BackgroundColor="#4e4e4e" HeightRequest="100" WidthRequest="400" Margin="0,20,0,0" Padding="10">
+            <Grid  HeightRequest="75" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+                
+                
+                <Label Text="$7.5m" TextColor="White" FontSize="14" FontAttributes="Bold" 
+                         VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center"/>
+                <Label Text="$3.5m" TextColor="White" FontSize="14" FontAttributes="Bold" 
+         VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"/>
+                
+                <Label Text="+598%" TextColor="White" FontSize="14" FontAttributes="Bold" 
+        VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center"/>
+                <Label Text="12" TextColor="White" FontSize="14" FontAttributes="Bold" 
+        VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="3" HorizontalOptions="Center"/>
+
+
+                <Label Text="Record" TextColor="LightGrey" FontSize="12" FontAttributes="Bold" 
+                         VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center"/>
+                <Label Text="Average" TextColor="LightGrey" FontSize="12" FontAttributes="Bold" 
+         VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="1" HorizontalOptions="Center"/>
+
+                <Label Text="General" TextColor="LightGrey" FontSize="12" FontAttributes="Bold" 
+         VerticalTextAlignment="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="2"/>
+                <Label Text="Items" TextColor="LightGrey" FontSize="12" FontAttributes="Bold" 
+        VerticalTextAlignment="Center"  HorizontalOptions="Center" Grid.Row="2" Grid.Column="3"/>
+
+            </Grid>
+                </Frame>
+
+
+            <Grid Padding="20,20,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Other Van Gogh Works"
+                   FontAttributes="Bold"
+                   
+                       FontSize="18"
+                       TextColor="White"
+                   HorizontalOptions="Start" Grid.ColumnSpan="2"/>
+                <Frame Grid.Column="0" Grid.Row="1" CornerRadius="20" HeightRequest="175" WidthRequest="150">
+                    <Image Source="tree1.png" HeightRequest="175" WidthRequest="150" Aspect="AspectFill" />
+                    
+                </Frame>
+                <Frame Grid.Column="1" Grid.Row="1" HeightRequest="100" WidthRequest="150" VerticalOptions="Start">
+                    <Image Source="street.png" HeightRequest="100" WidthRequest="150" Aspect="AspectFill" 
+/>
+                </Frame>
+
+                <Label Text="Cafe Terrrace at Night" 
+                       TextColor="White" FontSize="13" 
+                       Grid.Row="1" FontAttributes="Bold"
+                       Grid.Column="1" 
+                       VerticalTextAlignment="Center" 
+                       Margin="0,60,0,0"
+                       WidthRequest="150"/>
+                <Label Text="$1,920,000" 
+                       TextColor="LightGrey" FontSize="12" 
+                       Grid.Row="1" FontAttributes="Bold"
+                       Grid.Column="1" 
+                       VerticalTextAlignment="Center" 
+                       Margin="0,100,0,0"
+                       WidthRequest="150"/>
+
+                <Label Text="Cafe Terrrace at Night" 
+                       TextColor="White" FontSize="13" 
+                       Grid.Row="2" FontAttributes="Bold"
+                       Grid.Column="0" 
+                       VerticalTextAlignment="Start" 
+                       Margin="0,10,0,0"
+                       WidthRequest="150"
+                       />
+                <Label Text="$1,920,000" 
+                       TextColor="LightGrey" FontSize="12" 
+                       Grid.Row="2" FontAttributes="Bold"
+                       Grid.Column="0" 
+                       VerticalTextAlignment="Start" 
+                       Margin="0,30,0,0"
+                       WidthRequest="150"/>
+            </Grid>
+
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
